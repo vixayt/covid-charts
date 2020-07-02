@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+  covid-chart:
+    container_name: covid-chart
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+
